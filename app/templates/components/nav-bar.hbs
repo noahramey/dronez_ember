@@ -14,17 +14,22 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Cars</a></li>
-        <li><a href="#">Concerts</a></li>
-        <li><a href="#">Free</a></li>
-        <li><a href="#">Help Wanted</a></li>
-        <li><a href="#">Jobs</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inspire Series <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li role="separator" class="divider"></li>
+            <li>{{#link-to 'drone' '1'}}Inspire 1{{/link-to}}</li>
+            <li>{{#link-to 'drone' '3'}}Inspire 1 Pro{{/link-to}}</li>
           </ul>
         </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Phantom Series <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>{{#link-to 'drone' '0'}}Phantom 3 Pro{{/link-to}}</li>
+            <li>{{#link-to 'drone' '2'}}Phantom 4{{/link-to}}</li>
+          </ul>
+        </li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Checkout</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

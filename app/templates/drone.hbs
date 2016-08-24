@@ -1,1 +1,45 @@
-{{outlet}}
+<div class="hero-box" style="background-image:url('{{model.heroImage}}')">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h1>{{model.name}}</h1>
+        <h5>{{model.shortDescription}}</h5>
+        <h3>Price: ${{model.price}}</h3>
+        <button class="btn btn-lg btn-info" {{action 'addToCart' model}}>Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <h3 class="">Specs</h3>
+    <div class="row">
+      <h4>AIRCRAFT</h4>
+      <div class="col-sm-6">
+        <h5>Weight</h5>
+        <h5>Max Speed</h5>
+        <h5>Max Flight Time</h5>
+        <h5>Max Flight Altitude</h5>
+      </div>
+      <div class="col-sm-6">
+        <h5>{{model.weight}}</h5>
+        <h5>{{model.maxSpeed}}</h5>
+        <h5>{{model.maxFlightTime}}</h5>
+        <h5>{{model.maxFlightAltitude}}</h5>
+      </div>
+    </div>
+    <div class="row">
+      <h4>CAMERA + CONTROLLER</h4>
+      <div class="col-sm-6">
+        <h5>Max Video Quality</h5>
+        <h5>Max Photo Quality</h5>
+        <h5>Max Controller Distance</h5>
+      </div>
+      <div class="col-sm-6">
+        <h5>{{model.videoQuality}}</h5>
+        <h5>{{model.photoQuality}}</h5>
+        <h5>{{model.controllerDistance}}</h5>
+      </div>
+    </div>
+  </div>
+</div>

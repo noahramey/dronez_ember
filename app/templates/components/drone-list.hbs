@@ -1,6 +1,8 @@
 {{#each sortedDrones as |drone|}}
-  <div class="col-sm-3">
-    <h3>{{drone.name}}</h3>
-    <p>{{drone.shortDescription}}</p>
-  </div>
+  {{#link-to 'drone' drone.id}}
+    <div class="col-sm-3">
+      <h3>{{drone.name}}</h3>
+      <p>{{drone.shortDescription}}</p>
+    </div>
+  {{/link-to}}
 {{/each}}

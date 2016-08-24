@@ -6,7 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('drone');
+  this.route('drone', {path: '/drone/:drone_id'});
 });
 
 export default Router;
