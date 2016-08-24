@@ -4,6 +4,7 @@
       <div class="col-sm-4">
         <h1>{{model.name}}</h1>
         <h5>{{model.shortDescription}}</h5>
+        <h5>{{avg-review model.reviews}}</h5>
         <h3>Price: ${{model.price}}</h3>
         <button class="btn btn-lg btn-info" {{action 'addToCart' model}}>Add to Cart</button>
       </div>
