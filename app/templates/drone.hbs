@@ -10,36 +10,46 @@
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-sm-6">
-    <h3 class="">Specs</h3>
-    <div class="row">
-      <h4>AIRCRAFT</h4>
-      <div class="col-sm-6">
-        <h5>Weight</h5>
-        <h5>Max Speed</h5>
-        <h5>Max Flight Time</h5>
-        <h5>Max Flight Altitude</h5>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3 class="">Specs</h3>
+      <div class="row">
+        <div class="col-sm-12">
+          <h4>AIRCRAFT</h4>
+        </div>
+        <div class="col-sm-6">
+          <h5>Weight</h5>
+          <h5>Max Speed</h5>
+          <h5>Max Flight Time</h5>
+          <h5>Max Flight Altitude</h5>
+        </div>
+        <div class="col-sm-6">
+          <h5>{{model.weight}}</h5>
+          <h5>{{model.maxSpeed}}</h5>
+          <h5>{{model.maxFlightTime}}</h5>
+          <h5>{{model.maxFlightAltitude}}</h5>
+        </div>
       </div>
-      <div class="col-sm-6">
-        <h5>{{model.weight}}</h5>
-        <h5>{{model.maxSpeed}}</h5>
-        <h5>{{model.maxFlightTime}}</h5>
-        <h5>{{model.maxFlightAltitude}}</h5>
+      <div class="row">
+        <div class="col-sm-12">
+          <h4>CAMERA + CONTROLLER</h4>
+        </div>
+        <div class="col-sm-6">
+          <h5>Max Video Quality</h5>
+          <h5>Max Photo Quality</h5>
+          <h5>Max Controller Distance</h5>
+        </div>
+        <div class="col-sm-6">
+          <h5>{{model.videoQuality}}</h5>
+          <h5>{{model.photoQuality}}</h5>
+          <h5>{{model.controllerDistance}}</h5>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <h4>CAMERA + CONTROLLER</h4>
-      <div class="col-sm-6">
-        <h5>Max Video Quality</h5>
-        <h5>Max Photo Quality</h5>
-        <h5>Max Controller Distance</h5>
-      </div>
-      <div class="col-sm-6">
-        <h5>{{model.videoQuality}}</h5>
-        <h5>{{model.photoQuality}}</h5>
-        <h5>{{model.controllerDistance}}</h5>
-      </div>
+    <div class="col-sm-6">
+      {{review-list reviews=model.reviews}}
+      {{new-review drone=model saveReview="saveReview"}}
     </div>
   </div>
 </div>

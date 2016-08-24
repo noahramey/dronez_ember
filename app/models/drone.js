@@ -12,5 +12,6 @@ export default DS.Model.extend({
   videoQuality: DS.attr(),
   photoQuality: DS.attr(),
   controllerDistance: DS.attr(),
-  price: DS.attr()
+  price: DS.attr(),
+  reviews: DS.hasMany('review', { async: true })
 });

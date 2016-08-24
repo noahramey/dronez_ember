@@ -1,0 +1,16 @@
+<div class="row">
+  <form>
+    <h3>Write a Review</h3>
+    <div class="form-group">
+      <label for="rating">Rating (1-5)</label>
+      {{input value=rating id="rating" type="number"}}
+    </div>
+
+    <div class="form-group">
+      <label for="comment">Comment</label>
+      {{textarea value=comment id="comment" columns="40" rows="5"}}
+    </div>
+
+    <button {{action 'saveReview'}}>Submit Review</button>
+  </form>
+</div>
