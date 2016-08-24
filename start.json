@@ -1,0 +1,54 @@
+{ "drones" : [{
+    "name": "Phantom 3 Pro",
+    "shortDescription": "Your Phantom 3 fits into your life and makes flying remarkably intuitive and easy. From takeoff to landing, it's completely under your control, responding to your commands while automatically handling the most complex aspects of safe, stable flight.",
+    "image": "http://www-optimized.djicdn.com/assets/images/products/phantom-3-pro/index/phantom-3-pro-v2@2x-011d1bce9f42d76ddb1c4e4ae3332421_80.webp",
+    "heroImage": "http://www-optimized.djicdn.com/assets/images/products/phantom-3-pro/aircraft/s1-bg1-6ee8521c6ff855c208aed4b93427b42f_80.webp",
+    "weight": "1280 grams",
+    "maxSpeed": "16 meters/second",
+    "maxFlightTime": "23 minutes",
+    "maxFlightAltitude": "120 meters",
+    "videoQuality": "4K UltraHD",
+    "photoQuality": "4000px x 3000px",
+    "controllerDistance": "5 kilometers",
+    "price": 999
+  }, {
+    "name": "Inspire 1",
+    "shortDescription": "Imagine holding the future in your hands. Designed to be powerful while lightweight, flexible while providing the stability you need, the Inspire 1 is DroneZ’s most advanced complete package. All of the latest aerial technology is packed into one simple, ready-to-fly system, putting you in the sky within minutes.",
+    "image": "http://www-optimized.djicdn.com/assets/images/products/inspire-1/inspire-1-a525212d580110f9f3c8f4d4628671ff_80.webp",
+    "heroImage": "http://www-optimized.djicdn.com/assets/images/products/inspire-1/aircraft/s1-bg-8a09c61e09411729650852b447b5355d_80.webp",
+    "weight": "2935 grams",
+    "maxSpeed": "22 meters/second",
+    "maxFlightTime": "18 minutes",
+    "maxFlightAltitude": "120 meters",
+    "videoQuality": "4K UltraHD",
+    "photoQuality": "4000px x 3000px",
+    "controllerDistance": "5 kilometers",
+    "price": 1999
+  }, {
+    "name": "Phantom 4",
+    "shortDescription": "The DroneZ Phantom 4 is the smartest flying camera DroneZ has ever created. Able to fly intelligently with a tap, automatically create seamless tracking shots, fly intelligently over or around obstacles and much more. Flying has never been this easy or as much fun. Obstacle sensors enable the Phantom 4 to sense and react to its environment.",
+    "image": "http://www-optimized.djicdn.com/assets/images/products/phantom-3-pro/index/phantom-3-pro-v2@2x-011d1bce9f42d76ddb1c4e4ae3332421_80.webp",
+    "heroImage": "http://asset1.djicdn.com/images/360/phantom-4/s1-bg/s1-bg2-v2.jpg",
+    "weight": "1380 grams",
+    "maxSpeed": "20 meters/second",
+    "maxFlightTime": "28 minutes",
+    "maxFlightAltitude": "120 meters",
+    "videoQuality": "4K UltraHD",
+    "photoQuality": "4000px x 3000px",
+    "controllerDistance": "5 kilometers",
+    "price": 1199
+  }, {
+    "name": "Inspire 1 Pro",
+    "shortDescription": "The DroneZ Inspire 1 Pro is the smallest, easiest professional aerial filmmaking platform in the world. It combines DroneZ's unparalleled leadership in aerial technology with world-class M4/3 imaging capabilities. Whether you are a professional photographer or a Hollywood filmmaker, the Inspire 1 Pro is ready to take your work to new heights.",
+    "image": "http://www-optimized.djicdn.com/assets/images/products/phantom-3-pro/index/phantom-3-pro-v2@2x-011d1bce9f42d76ddb1c4e4ae3332421_80.webp",
+    "heroImage": "http://www-optimized.djicdn.com/assets/images/products/inspire-1-pro/overview/s2-bg-d3d746c16d3ed68c9a966baf70ddaaa9_80.webp",
+    "weight": "2870 grams",
+    "maxSpeed": "18 meters/second",
+    "maxFlightTime": "15 minutes",
+    "maxFlightAltitude": "120 meters",
+    "videoQuality": "Camera not included",
+    "photoQuality": "Camera not included",
+    "controllerDistance": "5 kilometers",
+    "price": 3399
+  }]
+}
