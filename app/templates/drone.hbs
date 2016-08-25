@@ -1,12 +1,21 @@
-<div class="hero-box" style="background-image:url('{{model.heroImage}}')">
+<div class="hero-box" style="background-image:url('{{model.drone.heroImage}}')">
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
-        <h1>{{model.name}}</h1>
-        <h5>{{model.shortDescription}}</h5>
+        <h1>{{model.drone.name}}</h1>
+        <h5>{{model.drone.shortDescription}}</h5>
         <h5>{{avg-review model.reviews}}</h5>
-        <h3>Price: ${{model.price}}</h3>
-        <button class="btn btn-lg btn-info" {{action 'addToCart' model}}>Add to Cart</button>
+        <h3>Price: ${{model.drone.price}}</h3>
+        <button class="btn btn-lg btn-info" {{action 'addToCart' model.drone}} data-toggle="modal" data-target=".bs-example-modal-sm">Add to Cart</button>
+        <div class="modal bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+          <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+              <h5>"{{model.drone.name}}" added to cart.</h5>
+              <button {{action 'transitionToCart'}} class="btn btn-lg btn-info" data-dismiss="modal" data-target=".bs-example-modal-sm">View Cart</button>
+              <button class="btn btn-lg btn-info" data-dismiss="modal" data-target=".bs-example-modal-sm">Continue Shopping</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -26,10 +35,10 @@
           <h5>Max Flight Altitude</h5>
         </div>
         <div class="col-sm-6">
-          <h5>{{model.weight}}</h5>
-          <h5>{{model.maxSpeed}}</h5>
-          <h5>{{model.maxFlightTime}}</h5>
-          <h5>{{model.maxFlightAltitude}}</h5>
+          <h5>{{model.drone.weight}}</h5>
+          <h5>{{model.drone.maxSpeed}}</h5>
+          <h5>{{model.drone.maxFlightTime}}</h5>
+          <h5>{{model.drone.maxFlightAltitude}}</h5>
         </div>
       </div>
       <div class="row">
@@ -42,15 +51,15 @@
           <h5>Max Controller Distance</h5>
         </div>
         <div class="col-sm-6">
-          <h5>{{model.videoQuality}}</h5>
-          <h5>{{model.photoQuality}}</h5>
-          <h5>{{model.controllerDistance}}</h5>
+          <h5>{{model.drone.videoQuality}}</h5>
+          <h5>{{model.drone.photoQuality}}</h5>
+          <h5>{{model.drone.controllerDistance}}</h5>
         </div>
       </div>
     </div>
     <div class="col-sm-6">
       {{review-list reviews=model.reviews}}
-      {{new-review drone=model saveReview="saveReview"}}
+      {{new-review drone=model.drone saveReview="saveReview"}}
     </div>
   </div>
 </div>
