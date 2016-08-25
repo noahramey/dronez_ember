@@ -1,5 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  shoppingCart: Ember.inject.service()
+  shoppingCart: Ember.inject.service(),
+
+  actions: {
+    clearOnCheckout() {
+      this.get('shoppingCart').clearCart();
+    }
+  }
 });

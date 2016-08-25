@@ -14,5 +14,10 @@ export default Ember.Service.extend({
       item.quantity = 1;
       this.get('itemCounter').pushObject(item);
     }
+  },
+
+  clearCart() {
+    this.set('items', []);
+    this.set('itemCounter', []);
   }
 });

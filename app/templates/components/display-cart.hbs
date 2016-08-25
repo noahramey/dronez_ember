@@ -19,8 +19,8 @@
           {{else}}
             <div class="text-center">
               <h3>Total Price: ${{total-price shoppingCart.items}}.00</h3>
-              <button class="btn btn-lg btn-success" data-toggle="modal" data-target=".bs-example-modal-sm">Checkout</button>
-              <div class="modal bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+              <button class="btn btn-lg btn-success" data-toggle="modal" data-target=".bs-example-modal-sm" >Checkout</button>
+              <div class="modal bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" {{action 'clearOnCheckout'}}>
                 <div class="modal-dialog modal-sm" role="document">
                   <div class="modal-content">
                     <h5>Your money is ours. Thank you.</h5>
