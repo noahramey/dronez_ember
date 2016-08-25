@@ -5,7 +5,7 @@ export function totalPrice(params) {
   var total = 0;
 
   for (var i = 0; i < items.length; i++) {
-    total += items[i].get('price');
+    total += (items[i].get('price') * items[i].get('quantity'));
   }
   return total;
 }

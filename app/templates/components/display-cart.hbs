@@ -1,6 +1,36 @@
-<ul>
-  {{#each shoppingCart.items as |item|}}
-    <li>{{item.name}} -- {{item.price}}</li>
-  {{/each}}
-  <li>Total Price: ${{total-price shoppingCart.items}}</li>
-</ul>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <div class="jumbotron">
+        <div>
+          {{#each shoppingCart.items as |item|}}
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-1 text-right">
+              <h5>{{item.name}} (${{item.price}}.00)</h5>
+            </div>
+            <div class="col-sm-1 col-sm-offset-1 text-left">
+              <h5>x{{item.quantity}}</h5>
+            </div>
+          </div>
+          {{/each}}
+          {{#if (eq shoppingCart.items.length 0)}}
+            <h3 class="text-center">No items in cart</h3>
+          {{else}}
+            <div class="text-center">
+              <h3>Total Price: ${{total-price shoppingCart.items}}.00</h3>
+              <button class="btn btn-lg btn-success" data-toggle="modal" data-target=".bs-example-modal-sm">Checkout</button>
+              <div class="modal bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                <div class="modal-dialog modal-sm" role="document">
+                  <div class="modal-content">
+                    <h5>Your money is ours. Thank you.</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
